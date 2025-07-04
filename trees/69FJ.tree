@@ -1,6 +1,7 @@
 \date{2025-06-19T05:26:23Z}
 \title{Deferred planning in DFAs as quotienting}
 
-\transclude{69FK}
+\p{To begin, we assume }
+
 \p{TODO: Assume the DFA is minimized. Then make observation that if the DFA is large, it must have a large number of distinct paths to accepting.}
 \p{TODO: Interpret the constant output as "don't care regions"}

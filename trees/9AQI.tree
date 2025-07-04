@@ -1,0 +1,43 @@
+\date{2025-07-04T01:04:18Z}
+\author{marcell}
+
+\taxon{Definition}
+\title{Representation Classes}
+
+\def\Nat{\mathbb{N}}
+\def\eqdef{\triangleq}
+
+\def\RepClass{\mathcal{R}}
+\def\ConceptClass{\Phi}
+\def\encodeFn{\text{encode}}
+\def\conceptFn{\text{concept}}
+\def\size{\text{size}}
+
+\p{
+   A \strong{representation class} is a set #{\RepClass} equipped
+   with two maps:
+   ##{
+     \begin{equation}
+     \encodeFn : \RepClass \to \{0, 1\}^*
+     \end{equation}
+   }
+   ##{
+     \begin{equation}
+     \conceptFn: \RepClass \to \ConceptClass
+     \end{equation}
+   }
+   where #{\encodeFn} is injective.
+   A representation class is \strong{bijective} if \strong{concept} is
+   a bijection. The size or \strong{description length} of a
+   representation is given by the length of its encoding:
+   ##{
+     \begin{equation}
+     \begin{split}
+     &\size : \RepClass \to \Nat\hspace{1em}\\
+     &\size(r) \eqdef |\encodeFn(r)|.
+     \end{split}
+     \end{equation}
+   }
+   Finally, given #{\RepClass}, we define the description length 
+   of a concept to be #{\min_{r\in\RepClass}\size(r)}.
+}

@@ -9,15 +9,8 @@
 
 \p{A agent is said to "defer planning" if their current \em{policy} #{\policy} is:
   \ol{
-    \li{hierarchical, e.g., generates a (partial and perhaps "just-in-time") series of subgoals, #{\goal_1, \ldots \goal_n}}
+    \li{hierarchical and induces series of subgoals, #{\goal_1, \ldots \goal_n}.}
     \li{The policy is a function of a state and the current goal: #{\policy(\state\mid\action,\goal)}}
     \li{The policy is a \em{partial} function for future goals.}
   }
-}
-\p{\strong{Remark:} This is heavily inspired by the work of [Mark K. Ho](https://markkho.github.io/) on [construals](https://arxiv.org/abs/2105.06948). The follow example (inspired by a conversation with Mark) illustrates the idea: Consider planning a trip from San Francisco to New York. To do so, you first make the high level decision to take an airplane which results in the following policy decomposition:
-  \ol{
-    \li{Precisely plan on how to get to airport.}
-    \li{Once at the airport, precisely plan on how to get to your gate.}
-  }
-While a cartoon, this example illustrates a key idea: (most?) human plans involve some amount of planning to plan. Specifically, humans are have only partial observability and are computationally bounded. As such, it makes no sense to precisely plan what you will do, e.g., down to the exact path, once you get to the airport. For all you know, there will be unplanned construction requiring a very different route. More generally, resource bounded agents should plan to plan.
 }
