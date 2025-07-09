@@ -1,7 +1,68 @@
 \date{2025-06-19T05:26:23Z}
 \title{Deferred planning in DFAs as quotienting}
+\author{marcell}
 
-\p{To begin, we assume }
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+
+\def\Graph{G}
+\def\Graphs{\mathcal{G}}
+\def\GraphEncoder{f}
+
+\def\Reals{\mathbb{R}}
+
+\p{ TODO: Properely cite theorem that graph NN must reduce to constant.}
+
+\p{
+
+  The connection to deferred planning comes from a [recent
+  results](Adam-DayBCF24) illustrating the for any family of graphs,
+  #{\Graphs}, and \strong{fixed} graph neural network encoder, #{\GraphEncoder
+  : \Graphs \to \Reals^n}, the output of #{\Graphs} must converge to a
+  constant as the size of the graphs tends to infinity. Psuedo-formally, we
+  have:
+
+  ##{
+    \exists f^*~.~\lim_{n\to\infty} \Pr_G\big(\GraphEncoder(G) \approx f^* \mid n = |G|\big) = 1
+  }
+}
+
+\p{Consider a family of [minimial DFAs](69FJ) defined over a fixed alphabet #{\alphabet}.}
+\p{
+  Specifically, consider fixing a small reference DFA, #{\DFA}, and a state 
+  #{q} [accessed](69FK) by string, #{w}. Now imagine replacing state #{q} by
+  a large DFA of size #{n} such that the resulting DFA, #{\DFA'}, is not-minimizable.
+}
+\p{\strong{Aside:} Via a simple counting argument, for uniformly random minimal DFAs
+of a fixed size, this replacement will indeed result in minimal (irreducible) DFA.}
+\p{
+  If we have a graph encoder for these DFA, e.g., 
+  a [RAD-Embedding](69FH), then by (TODO) it must be the case that the embeddings
+  for the new state accessed by #{w}, call #{q'}, tend to a constant!
+}
+\p{
+  For example, consider the case where #{D} is a long chain with a single
+  accepting sink state at the end of the chain. #{D'} is then generally
+  partitioned into three parts:
+ } 
+  \ol{
+    \li{A chain prefix}
+    \li{A large spaghetti DFA whih high connectivity.}
+    \li{A chain suffix ending in the accepting state.}
+  }
+\p{
+  By construction of the message passing of a RAD-encoder, the embeddings
+  of the suffix can't depend on any othe other graph components.
+  However, more surprisingly, as #{|D'|} gets large, the embeddings for
+  the prefix must also become independent to the rest of the DFA!
+}
+\p{
+  While this information bottleneck may initially be concerning, 
+  from a policy perspective, we identify this behavior as
+  a form of [deferred planning](69FI)!
+  accesses a very large sub-DFA, #{\DFA_w}, where #{w} is #{\DFA_w}'s 
+  [access string](69FK).
+} 
 
 \p{TODO: Assume the DFA is minimized. Then make observation that if the DFA is large, it must have a large number of distinct paths to accepting.}
 \p{TODO: Interpret the constant output as "don't care regions"}

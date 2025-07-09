@@ -1,0 +1,21 @@
+\title{Almost Surely Asymptotically Constant Graph Neural Networks}
+\date{2024}
+\author/literal{Sam Adam-Day}
+\author/literal{Michael Benedikt}
+\author/literal{İsmail İlkan Ceylan}
+\author/literal{Ben Finkelshtein}
+\taxon{Reference}
+
+\meta{bibtex}\verb<<<|
+@inproceedings{DBLP:conf/nips/Adam-DayBCF24,
+  author       = {Sam Adam{-}Day and
+                  Michael Benedikt and
+                  {\.I}smail {\.I}lkan Ceylan and
+                  Ben Finkelshtein},
+  title        = {Almost Surely Asymptotically Constant Graph Neural Networks},
+  booktitle    = {NeurIPS},
+  year         = {2024}
+}
+<<<
+
+\p{We present a new angle on the expressive power of graph neural networks (GNNs) by studying how the predictions of real-valued GNN classifiers, such as those classifying graphs probabilistically, evolve as we apply them on larger graphs drawn from some random graph model. We show that the output converges to a constant function, which upper-bounds what these classifiers can uniformly express. This strong convergence phenomenon applies to a very wide class of GNNs, including state of the art models, with aggregates including mean and the attention-based mechanism of graph transformers. Our results apply to a broad class of random graph models, including sparse and dense variants of the Erdős-Rényi model, the stochastic block model, and the Barabási-Albert model. We empirically validate these findings, observing that the convergence phenomenon appears not only on random graphs but also on some real-world graphs. }

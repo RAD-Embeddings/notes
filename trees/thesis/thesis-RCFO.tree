@@ -1,0 +1,11 @@
+\date{2025-07-04T02:00:40Z}
+\title{Residual Languages}
+
+\import{thesis-I5ID}
+
+\p{In the context of [Formal Languages](thesis-I5ID)
+  the \strong{residual language} (Brzozowski derivative) of language #{\lang}
+  by string #{x}, denoted #{x^{-1}\lang} is #{\{y \in \alphabet^* \mid x\concat
+  y \in \lang\}}, i.e., the set of suffixes of strings with prefix #{x} in
+  #{L}.
+}

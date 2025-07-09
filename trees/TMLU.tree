@@ -1,0 +1,7 @@
+\date{2025-07-04T02:06:11Z}
+\title{Minimized DFA}
+\author{marcell}
+
+\import{thesis-I5ID}  % Formal Languages
+
+\p{TODO: Define minimized DFAs via Myhill-Nerod (or even #{L^*})}

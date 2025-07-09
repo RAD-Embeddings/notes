@@ -1,0 +1,24 @@
+\date{2025-07-04T01:36:23Z}
+\title{Formal Languages}
+\author{marcell}
+
+\def\alphabet{\Sigma}
+\def\lang{L}
+\def\concat{\centerdot}
+\def\emptystring{\epsilon}
+\def\eqdef{\triangleq}
+
+\p{
+  A  \strong{formal language}, #{\lang}, is a set of strings over alphabet
+  #{\alphabet}.  The \strong{concatenation} of two languages #{\lang_1} and #{\lang_2},
+  denoted ##{\lang_1 \concat \lang_2,} is the set #{\{x \concat y \mid x, y \in \lang_1 \times
+  \lang_2\}}. 
+
+  For any natural number #{k}, we denote by #{\lang^k} the concatenation of
+  #{\lang} with itself #{k} times, where ##{\lang^0 \eqdef \{\emptystring\}.}
+
+  The \strong{Kleene closure} of #{\lang} is defined as:
+  ##{\lang^*\eqdef \bigcup_{k=0}^\infty \lang^k.}
+
+}
+

@@ -2,15 +2,15 @@
 \taxon{Definition}
 \title{Deterministic Finite Automata}
 
-\def\alphabet{\Sigma}
-\def\emptystring{\epsilon}
-\def\concat{\centerdot}
+\import{thesis-I5ID}  % Formal Languages
+
 \def\path{\xi}
 \def\eqdef{\triangleq}
+\def\DFA{D}
 
 \p{
   A \strong{Deterministic Finite Automaton} (DFA) is a 5-tuple,
-  #{D = \langle Q, \alphabet, \delta, q_0, F\rangle}, where #{Q} is a finite set of
+  #{\DFA = \langle Q, \alphabet, \delta, q_0, F\rangle}, where #{Q} is a finite set of
   \strong{states}, #{\alphabet} is a finite alphabet,
   #{\delta : Q \times \alphabet \to Q} is the \strong{transition
     function}, #{q_0 \in Q} is the \strong{initial state}, and #{F \subseteq Q}
@@ -25,9 +25,10 @@
       \end{cases}.
     }
     A string #{x} is an \strong{access-string} for state #{q} if
-    #{\delta^*(q_0, x) = q}. #{D} is said to be trimmed if each state
-    #{q\in Q} has at least one access-string.  One says #{D}
-    \strong{accepts} #{x} if #{\delta^*(q_0, x) \in F}.  Denote by #{L[D]}
-    the set of strings accepted by #{D} from #{q_0}. Finally, we say
-    that #{D} \strong{recognizes} #{L} iff #{L[D]}.
+    #{\delta^*(q_0, x) = q}. #{\DFA} is said to be \strong{trimmed} if each state
+    #{q\in Q} has at least one access-string.  One says #{\DFA}
+    \strong{accepts} #{x} if #{\delta^*(q_0, x) \in F}.  Denote by #{L[\DFA]}
+    the set of strings accepted by #{\DFA} from #{q_0}. Finally, we say
+    that #{\DFA} \strong{recognizes} #{L} iff #{L[\DFA]}.
 }
+\p{\strong{Remark:} It is often implictily assumed the a DFA is trimmed.}
