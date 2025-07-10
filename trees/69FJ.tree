@@ -11,10 +11,7 @@
 
 \def\Reals{\mathbb{R}}
 
-\p{ TODO: Properely cite theorem that graph NN must reduce to constant.}
-
 \p{
-
   The connection to deferred planning comes from a [recent
   results](Adam-DayBCF24) illustrating the for any family of graphs,
   #{\Graphs}, and \strong{fixed} graph neural network encoder, #{\GraphEncoder

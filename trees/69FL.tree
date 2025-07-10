@@ -1,6 +1,7 @@
 \date{2025-06-25T21:37:12Z}
 
 \title{Ideas for improving DISS}
+\taxon{Discussion}
 
 
 \p{DISS has 3 parts each of which could be a bottleneck.}
@@ -11,6 +12,16 @@
   \li{Example Buffer / Labeled Example Set}
 }
 
-\p{In the past, the bottle neck was planning to compute maximum entropy policies. This acts as the ranking for simulated annealing and for surprise guided gradient counterfactuals. A natural question is if we can use RAD-embedding conditioned policies to accelerate these steps.}
+\p{
+  In the past, the bottle neck was planning to compute maximum entropy policies.
+  This acts as the ranking for simulated annealing and for surprise guided
+  gradient counterfactuals. A natural question is if we can use RAD-embedding
+  conditioned policies to accelerate these steps.
+}
 
-\p{The other question is how we can accelerate concept identification. #{L^*LM} is one approach for giving natural language context. Alternatively, there is the observation that DISS can be run recursively, e.g., an approximate fast version of DISS could be itself used as a concept identification scheme.}
+\p{
+  The other question is how we can accelerate concept identification. #{L^*LM}
+  is one approach for giving natural language context. Alternatively, there is
+  the observation that DISS can be run recursively, e.g., an approximate fast
+  version of DISS could be itself used as a concept identification scheme.
+}
