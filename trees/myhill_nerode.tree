@@ -1,0 +1,13 @@
+\date{2025-07-16T03:40:07Z}
+
+\title{Myhill, Nerode (1957)}
+\taxon{Theorem}
+\meta{external}{https://en.wikipedia.org/wiki/Myhill-Nerode_theorem}
+
+\import{thesis-I5ID}
+
+\ol{
+  \li{ #{\lang} is \strong{regular} if and only if #{\lang} finite number of [residual languages](thesis-RCFO).}
+  \li{ This number is equal to the number of states in the minimal [deterministic finite automaton (DFA)](69FK) accepting #{\lang}.}
+  \li{The minimal DFA is unique up to unique isomorphism.}
+}

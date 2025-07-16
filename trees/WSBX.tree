@@ -1,0 +1,31 @@
+\date{2025-07-16T04:06:14Z}
+\taxon{Example}
+\author{marcell}
+
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+
+\title{Chain Construction for Deferred Planning}
+
+\p{
+  For example, consider the case where #{\DFA} is a long chain with a single
+  accepting sink state at the end of the chain. #{\DFA'} is then generally
+  partitioned into three parts:
+ } 
+\ol{
+  \li{A chain prefix}
+  \li{A large spaghetti DFA whih high connectivity.}
+  \li{A chain suffix ending in the accepting state.}
+}
+\figure{
+  \<html:img>[src]{https://placecats.com/neo/300/200}
+  \figcaption{TODO}
+}
+
+\p{
+  By construction of the message passing of a RAD-encoder, the embeddings
+  of the suffix can't depend on any othe other graph components.
+  However, more surprisingly, as #{|\DFA'|} gets large, the embeddings for
+  the prefix must also become independent to the rest of the DFA!
+}
+

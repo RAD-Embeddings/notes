@@ -4,4 +4,5 @@
 
 \import{thesis-I5ID}  % Formal Languages
 
+\p{The [Myhill-Nerod](https://en.wikipedia.org/wiki/Myhill-Nerode_theorem)}
 \p{TODO: Define minimized DFAs via Myhill-Nerod (or even #{L^*})}
