@@ -14,7 +14,7 @@
  } 
 \ol{
   \li{A chain prefix}
-  \li{A large spaghetti DFA whih high connectivity.}
+  \li{A large spaghetti DFA with high connectivity.}
   \li{A chain suffix ending in the accepting state.}
 }
 \figure{
