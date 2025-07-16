@@ -1,0 +1,24 @@
+\date{2025-07-16T04:30:35Z}
+\author{marcell}
+\title{Quotienting in the dummy environment vs contrastive training}
+\taxon{Conjecture}
+
+\p{TODO: Expand on these details}
+
+\p{
+  I conjecture that training in the dummy environment exhibits a stronger
+  (lossier) quotienting since the optimal policy only needs to know the set
+  of actions that will lead to an accepting state.
+}
+
+\p{
+  I conjecture two mechanisms to avoid just encoding the action set:
+  \ol{
+    \li{The message passing process acts and looks similar to dynamic programming and thus provides a natural mechanism to encode distances.}
+    \li{One does not start off at the optimal policy. Thus, it's
+  useful to understand which actions are risky, which involves understanding
+  which actions lead to sinks and which actions lead closer to accepting.}
+  }
+}
+
+\p{The constrastive training process however has a very different mechanism. The action can't be known by knowning the distances to accepting. One must analyze the structure of both DFAs to infer a distinguishing sequence. This must depend on \strong{both} DFAs. Thus the embedding must contain some amount of information about the [residual languages](thesis-RCF0).}

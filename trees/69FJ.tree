@@ -40,5 +40,6 @@
   pass the information bottleneck.
 } 
 
-\p{TODO: Assume the DFA is minimized. Then make observation that if the DFA is large, it must have a large number of distinct paths to accepting.}
-\p{TODO: Interpret the constant output as "don't care regions"}
+\transclude{8B52}
+
+\p{TODO: Provide a formalization of when this deferred planning will work.}
