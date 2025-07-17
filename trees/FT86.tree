@@ -1,0 +1,6 @@
+\date{2025-07-16T23:32:02Z}
+\author{marcell}
+\taxon{Conjecture}
+
+\p{TODO: Write down distinguishing string experiment.}
+\p{hypothesis: The length of the minimal distinguishing string between two dfas correlates with their embedding distance}

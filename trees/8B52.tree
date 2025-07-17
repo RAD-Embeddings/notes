@@ -21,4 +21,10 @@
   }
 }
 
-\p{The constrastive training process however has a very different mechanism. The action can't be known by knowning the distances to accepting. One must analyze the structure of both DFAs to infer a distinguishing sequence. This must depend on \strong{both} DFAs. Thus the embedding must contain some amount of information about the [residual languages](thesis-RCF0).}
+\p{
+  The constrastive training process however has a very different mechanism. The
+  action can't be known by knowning the distances to accepting. One must analyze
+  the structure of both DFAs to infer a distinguishing sequence. This must depend
+  on \strong{both} DFAs. Thus the embedding must contain some amount of
+  information about the [residual languages](thesis-RCFO).
+}

@@ -12,7 +12,7 @@
   a large DFA of size #{n} such that the resulting DFA, #{\DFA'}, is not-minimizable.
 }
 \p{\strong{Aside:} Via a simple counting argument, for uniformly random minimal DFAs
-of a fixed size, this replacement will indeed result in minimal (irreducible) DFA.}
+of a fixed size, with high probability, this replacement will indeed result in minimal (irreducible) DFA.}
 \p{
   If we have a graph encoder for these DFA, e.g., 
   a [RAD-Embedding](69FH), then [it must be the case that the embeddings
