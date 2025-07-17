@@ -1,3 +1,11 @@
 \date{2025-06-19T04:29:19Z}
 \title{RAD Embeddings}
+\meta{external}{https://rad-embeddings.github.io/}
+
+\let\backgroundColor{black}
+
+\<html:img>[src]{https://rad-embeddings.github.io/assets/logo.svg}
+           [style]{background: \backgroundColor;}
+\<html:img>[src]{https://rad-embeddings.github.io/assets/splash.svg}
+           [style]{background: \backgroundColor;}
 \p{TODO}
