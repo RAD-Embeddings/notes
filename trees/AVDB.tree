@@ -1,0 +1,18 @@
+\date{2025-07-18T04:23:54Z}
+\taxon{Definition}
+\author{marcell}
+
+\title{Minimal Distinguishing String}
+
+\import{thesis-I5ID}  % Formal Languages
+\import{97MB}         % Distinguishing Strings
+
+\p{
+  A [distinguishing string](97MB) #{w} of [languages](thesis-I5ID)
+  #{\lang_1, \lang_2} is said to be \strong{minimal} if it's length
+  is minimal, i.e.,
+
+  ##{
+    w \in \argmin \bigg \{ |x|~:~x \in \lang_1 \symdiff \lang_2 \bigg \} 
+  }
+}

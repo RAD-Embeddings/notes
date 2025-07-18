@@ -1,5 +1,6 @@
 \date{2025-06-19T04:05:16Z}
 \title{Emergent Deferred Planning in RAD-DFA embeddings}
+\author{marcell}
 
 \p{The message passing nature of [RAD Embeddings](69FH) inevitably results in a form of deferred planning.}
 
@@ -10,7 +11,7 @@
   The key observation here is that a form of deferred planning is inevitable
   due to the fact that [the output of a fixed message passing neural network
   almost surely tends to a constant as the size of the graph
-  increases.](https://arxiv.org/abs/2403.03880). While disastrous in the
+  increases.](construls22). While disastrous in the
   general context of classification, we observe the for planning in a finite
   automata, this process acts like a form of deferred planning 
 }

@@ -1,6 +1,14 @@
 \date{2025-07-16T23:32:02Z}
 \author{marcell}
+\author/literal{Andrew Li}
 \taxon{Conjecture}
+
+\title{Embedding distance correlates with the length of the minimal distinguishing string.}
+
+\p{\strong{Note:} This conjecture is inspired by a question by
+   [Andrew Li](https://www.cs.toronto.edu/~andrewli/) during a
+   presentation on RAD Embeddings.}
+
 
 \p{TODO: Write down distinguishing string experiment.}
 \p{hypothesis: The length of the minimal distinguishing string between two dfas correlates with their embedding distance}

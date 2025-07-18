@@ -1,0 +1,30 @@
+\title{People construct simplified mental representations to plan}
+\date{2022}
+\taxon{Reference}
+
+\author/literal{Mark K. Ho}
+\author/literal{David Abel}
+\author/literal{Carlos G. Correa}
+\author/literal{Michael L. Littman}
+\author/literal{Jonathan D. Cohen}
+\author/literal{Thomas L. Griffiths}
+
+
+\meta{bibtex}\verb<<<|
+@article{Ho_2022,
+   title={People construct simplified mental representations to plan},
+   volume={606},
+   ISSN={1476-4687},
+   url={http://dx.doi.org/10.1038/s41586-022-04743-9},
+   DOI={10.1038/s41586-022-04743-9},
+   number={7912},
+   journal={Nature},
+   publisher={Springer Science and Business Media LLC},
+   author={Ho, Mark K. and Abel, David and Correa, Carlos G. and Littman, Michael L. and Cohen, Jonathan D. and Griffiths, Thomas L.},
+   year={2022},
+   month=may, pages={129–136} }
+<<<
+
+\p{
+One of the most striking features of human cognition is the capacity to plan. Two aspects of human planning stand out: its efficiency and flexibility. Efficiency is especially impressive because plans must often be made in complex environments, and yet people successfully plan solutions to myriad everyday problems despite having limited cognitive resources. Standard accounts in psychology, economics, and artificial intelligence have suggested human planning succeeds because people have a complete representation of a task and then use heuristics to plan future actions in that representation. However, this approach generally assumes that task representations are fixed. Here, we propose that task representations can be controlled and that such control provides opportunities to quickly simplify problems and more easily reason about them. We propose a computational account of this simplification process and, in a series of pre-registered behavioral experiments, show that it is subject to online cognitive control and that people optimally balance the complexity of a task representation and its utility for planning and acting. These results demonstrate how strategically perceiving and conceiving problems facilitates the effective use of limited cognitive resources. 
+}

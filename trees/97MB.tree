@@ -1,0 +1,23 @@
+\date{2025-07-18T04:09:34Z}
+\taxon{Definition}
+\author{marcell}
+
+\title{Distinguishing Strings}
+
+\def\symdiff{\Delta}
+
+\import{thesis-I5ID}  % Formal Languages
+
+\p{
+  A \strong{distinguishing string} of two [formal languages](thesis-I5ID) #{\lang_1, \lang_2}
+  is an word whose membership differs between them, i.e., lies
+  in their symmetric difference:
+  ##{
+    x \in \big(\lang_1 \setminus \lang_2\big) \cup \big( \lang_2 \setminus \lang_1 \big).
+  }
+  or more compactly:
+  ##{
+    x \in \big(\lang_1 \symdiff \lang_2\big),
+  }
+  where #{\symdiff} denotes the symmetric difference.
+}

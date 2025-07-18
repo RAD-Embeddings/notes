@@ -1,0 +1,18 @@
+\date{2025-07-18T04:19:08Z}
+\title{Distinguishing Strings in DFAs}
+\author{marcell}
+\taxon{Observation}
+
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+\import{97MB}         % Symdiff
+
+\p{
+  For two [DFAs](69FK) #{\DFA_1, \DFA_2}, a [distinguishing string](97MB),
+  #{w}, corresponds to a path in the [symmetric difference automata](OS0G),
+  #{\DFA_1 \symdiff \DFA_2}.
+}
+\p{
+  The [minimal distiguishing string](AVDB) thus corresponds to a shortest
+  path in #{\DFA_1 \symdiff \DFA_2}.
+}
