@@ -5,6 +5,8 @@
 \import{thesis-I5ID}  % Formal Languages
 \import{69FK}         % DFAs
 
+   
+
 \title{Chain Construction for Deferred Planning}
 
 \p{
@@ -18,9 +20,12 @@
   \li{A chain suffix ending in the accepting state.}
 }
 \figure{
-  \<html:img>[src]{https://placecats.com/neo/300/200}
+  \<html:img>[src]{\route-asset{assets/imgs/emergent_planning/chain_dfa.svg}}
+
+
   \figcaption{TODO}
 }
+
 
 \p{
   By construction of the message passing of a RAD-encoder, the embeddings
