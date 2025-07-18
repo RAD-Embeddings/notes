@@ -23,7 +23,9 @@
   \<html:img>[src]{\route-asset{assets/imgs/emergent_planning/chain_dfa.svg}}
 
 
-  \figcaption{TODO}
+  \figcaption{
+    Illustration of introducing a "embedding information firewall" into a large chain DFA.
+  }
 }
 
 
