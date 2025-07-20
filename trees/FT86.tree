@@ -14,7 +14,6 @@
 \let\D2{\DFA^\prime}
 \let\D3{\DFA^{\prime\prime}}
 \let\eqdef{\triangleq}
-\let\f{\psi}
 \let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
 
 
@@ -38,23 +37,33 @@
   predicts the embedding distance:
 
   ##{
-    d(\D1, \D2) < d(\D1, \D3) \implies \norm{\RAD{\D1}}{\RAD{\D2}} \lesssim \norm{\RAD{\D1}}{\RAD{\D3}},
+    d(\D1, \D2) > d(\D1, \D3) \implies \norm{\RAD{\D1}}{\RAD{\D2}} \lesssim \norm{\RAD{\D1}}{\RAD{\D3}},
   }
   where #{\lesssim} denotes approximate less than, e.g., with high probability or within a given tolerance.
-
 }
+
 \figure{
   \<html:img>[width]{300px}[src]{\route-asset{assets/imgs/emergent_planning/conjecture_ft86.svg}}
 
 
   \figcaption{
-    Illustration of introducing a "embedding information firewall" into a large chain DFA.
+    Illustration of introducing a "embedding information firewall" into a
+    large chain DFA.
+
+    TODO: The correlation direction is backward in this picture.
+    Increasing the length of the minimum distinguishing string should
+    reduce the embedding distance.
   }
 }
-
 
 
 \p{
   \strong{Remark:} This also begs the question. What would happen if we were to
   train an embedding to make this explicit?
 } 
+\p{
+  TODO: Insert trivial counterexample for this effect. Namely, you
+  can pump the minimum distinguishing string length by forcing "sparse
+  feedback" via long chains. This is actually the typical case in
+  RAD DFAs....
+}

@@ -3,4 +3,43 @@
 \author{marcell}
 \title{Embedding distance (typically) increases along distigiuishing string}
 
-\p{Related to [FT86], the embedding distance should generally increase as the DFA progresses along a distingushing string.}
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+\import{97MB}         % Distinguishing Strings
+\import{69FH}         % RAD Embeddings
+
+\let\Nat{\mathbb{N}}
+\let\Real{\mathbb{R}}
+\let\D1{\DFA}
+\let\D2{\DFA^\prime}
+\let\D3{\DFA^{\prime\prime}}
+\let\eqdef{\triangleq}
+\let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
+
+\p{
+  Related to [Conjecture FT86](FT86), the embedding distance might generally
+  increase as the [DFAs](69FK) progress along the [minimal distingushing
+  string](AVDB). }
+
+\p{
+  The key idea is that in embedding space, one can distinguish two
+  DFAs if their embeddings are ever sufficently different.
+  Specifically, let #{\D1} and #{\D2} be two DFAs and let
+  #{w\in \D1\symdiff \D2} be a minimal distinguishing word.
+  If #{\D1 \neq \D2}
+}
+
+
+\p{
+  a longer distinguishing sequence means we can
+  pretend for longer that the two languages are the same. 
+  Of course, it could be the case that the DFAs have long minimal
+  distigiuishing strings but the difference in policies is immediate.
+  This for example, can constructed from any two DFAs where we add
+  long chain suffix that one needs to traverse before accepting.
+}
+\p{
+  The conjecture is that these would be distinguished earlier, e.g., when
+  their policies first have a large spike in KL-divergence.
+
+}
