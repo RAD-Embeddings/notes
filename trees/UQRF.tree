@@ -1,0 +1,26 @@
+\date{2025-07-20T05:06:10Z}
+\title{🔬 Current Research Interests}
+
+\p{
+  My research interests span the areas of Human Robot Interaction, Formal
+  Methods, Robotics, and Safety in Artificial Intelligence.
+}
+\p{
+  During my PhD dissertation my focus was on learning formal specifications,
+  e.g., automata, logic or programs, from expert demonstrations and using
+  demonstrations to teach back the learned formal specifications.
+}
+\p{
+  \strong{Post Phd:}
+  Since graduating, I've had opportunities to have more hands on automotive
+  experience and run a small machine learning research group. Our interests
+  include, but are not limited to, data-driven prediction and understanding
+  of driving scenes.
+
+  University collaborations have resulted in work ranging from [natural language informed
+  map reconstruction](https://arxiv.org/pdf/2506.10317), [using DMV crash reports
+  to reconstruct driving scenarios](https://arxiv.org/pdf/2405.03709), [learning
+  automata using natural language and expert demonstrations](https://lstar-lm.github.io/),
+  and [embedding automata for use in multi-task RL](rad-embeddings.github.io/).
+
+}

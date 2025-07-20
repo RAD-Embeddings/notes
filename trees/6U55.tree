@@ -1,0 +1,14 @@
+\date{2025-07-20T04:55:36Z}
+\title{Profile Photo}
+
+\figure{
+  \<html:img>[width]{200px}[src]{
+    \route-asset{assets/imgs/marcell.svg}
+  }
+  \figcaption{
+    Illustration of me in my mid 20's by [Prof. Elizabeth Polgreen](
+      https://polgreen.github.io/
+    ).
+  }
+}
+
