@@ -4,7 +4,7 @@
 
 \title{Distinguishing Strings}
 
-\def\symdiff{\Delta}
+\def\symdiff{\ominus}
 
 \import{thesis-I5ID}  % Formal Languages
 

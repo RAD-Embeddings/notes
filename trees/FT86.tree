@@ -3,12 +3,58 @@
 \author/literal{Andrew Li}
 \taxon{Conjecture}
 
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+\import{97MB}         % Distinguishing Strings
+\import{69FH}         % RAD Embeddings
+
+\let\Nat{\mathbb{N}}
+\let\Real{\mathbb{R}}
+\let\D1{\DFA}
+\let\D2{\DFA^\prime}
+\let\D3{\DFA^{\prime\prime}}
+\let\eqdef{\triangleq}
+\let\f{\psi}
+\let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
+
+
 \title{Embedding distance correlates with the length of the minimal distinguishing string.}
 
-\p{\strong{Note:} This conjecture is inspired by a question by
-   [Andrew Li](https://www.cs.toronto.edu/~andrewli/) during a
-   presentation on RAD Embeddings.}
+\p{
+  \strong{Note:} This conjecture is inspired by a question by
+  [Andrew Li](https://www.cs.toronto.edu/~andrewli/) during a
+  presentation on [RAD Embeddings](69FH).
+}
+
+\p{
+  Let #{\RAD{\D1}} be the [RAD Embedding](69FH) for a [DFA](69FK) #{\D1}.
+
+  Let #{d : \DFA-Set \times \DFA-Set \to \Nat} denote the length of the 
+  [minimal distinguishing string](AVDB) between two DFAs:
+  ##{
+      d(\D1, \D2) \eqdef \min_{w\in \D1 \symdiff \D2} |w|.
+  }
+  The conjecture is that the minimal distinguishing string length
+  predicts the embedding distance:
+
+  ##{
+    d(\D1, \D2) < d(\D1, \D3) \implies \norm{\RAD{\D1}}{\RAD{\D2}} \lesssim \norm{\RAD{\D1}}{\RAD{\D3}},
+  }
+  where #{\lesssim} denotes approximate less than, e.g., with high probability or within a given tolerance.
+
+}
+\figure{
+  \<html:img>[width]{300px}[src]{\route-asset{assets/imgs/emergent_planning/conjecture_ft86.svg}}
 
 
-\p{TODO: Write down distinguishing string experiment.}
-\p{hypothesis: The length of the minimal distinguishing string between two dfas correlates with their embedding distance}
+  \figcaption{
+    Illustration of introducing a "embedding information firewall" into a large chain DFA.
+  }
+}
+
+
+
+\p{
+  \strong{Remark:} This also begs the question. What would happen if we were to
+  train an embedding to make this explicit?
+} 

@@ -7,6 +7,7 @@
 \def\path{\xi}
 \def\eqdef{\triangleq}
 \def\DFA{D}
+\def\DFA-Set{\text{DFA}}
 
 \p{
   A \strong{Deterministic Finite Automaton} (DFA) is a 5-tuple,

@@ -3,6 +3,8 @@
 \taxon{Reference}
 \meta{external}{https://rad-embeddings.github.io/}
 
+\def\RAD[arg1]{[\hspace{-0.2em}[{\arg1}]\hspace{-0.2em}]}
+
 \let\backgroundColor{black}
 
 \<html:img>[src]{https://rad-embeddings.github.io/assets/logo.svg}

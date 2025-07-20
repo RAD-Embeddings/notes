@@ -20,7 +20,7 @@
   \li{A chain suffix ending in the accepting state.}
 }
 \figure{
-  \<html:img>[src]{\route-asset{assets/imgs/emergent_planning/chain_dfa.svg}}
+  \<html:img>[width]{400px}[src]{\route-asset{assets/imgs/emergent_planning/chain_dfa.svg}}
 
 
   \figcaption{
