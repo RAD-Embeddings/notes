@@ -1,4 +1,16 @@
 \title{Marcell J. Vazquez-Chanlatte's Notes}
+
+\figure{
+  \<html:img>[width]{200px}[src]{
+    \route-asset{assets/imgs/marcell.svg}
+  }
+  \figcaption{
+    Illustration of me in my mid 20's by [Prof. Elizabeth Polgreen](
+      https://polgreen.github.io/
+    ).
+  }
+}
+
 \ol{
   \li{[Tools](69FD)}
   \li{[Emergent DFA Planning](69FG)}
