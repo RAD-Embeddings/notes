@@ -1,5 +1,5 @@
 \date{2025-06-19T05:26:23Z}
-\title{Deferred planning in DFAs as quotienting}
+\title{Emergent information firewalls in DFA embeddings}
 \author{marcell}
 
 \import{thesis-I5ID}  % Formal Languages
@@ -26,18 +26,3 @@
 
 \transclude{F7U7}
 \transclude{WSBX}
-    
-\p{
-  While this information bottleneck may initially be concerning, 
-  from a policy perspective, we identify this behavior as
-  a form of [deferred planning](69FI)!
-}
-
-\p{
-  Specifically, since the policy tracks both the current state of
-  environment \strong{and} the DFA, the DFA embeddings of the
-  two different DFAs will diverge as they approach and eventually
-  pass the information bottleneck.
-} 
-
-

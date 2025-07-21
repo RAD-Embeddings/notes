@@ -1,11 +1,11 @@
 \date{2025-07-16T04:15:36Z}
 \taxon{Example}
-\title{General DFA example for deferred planning}
+\title{General DFA example for Information Firewalls}
 
 \import{thesis-I5ID}  % Formal Languages
 \import{69FK}         % DFAs
 
-\p{Consider a family of [minimial DFAs](69FJ) defined over a fixed alphabet #{\alphabet}.}
+\p{Consider a family of [minimial DFAs](69FK) defined over a fixed alphabet #{\alphabet}.}
 \p{
   Specifically, consider fixing a small reference DFA, #{\DFA}, and a state 
   #{q} [accessed](69FK) by string, #{w}. Now imagine replacing state #{q} by

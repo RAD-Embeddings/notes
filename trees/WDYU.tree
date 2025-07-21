@@ -1,0 +1,29 @@
+\date{2025-07-21T16:08:10Z}
+\title{Information Firewalls and Deferred Planning}
+\taxon{Observation}
+\author{marcell}
+
+\p{
+  While the existance of [information firewalls](69FJ) in [RAD-embeddings](69FH)
+  may initially be concerning to the dream of perfectly encoding an automata
+  objective for downstream tasks, e.g., multi-task RL, from a policy perspective,
+  we identify this behavior as a form of [deferred planning](69FI)!
+}
+
+\p{
+  Specifically, assuming smoothness in the policy function, it must be the
+  case then that the policy of an agent using a RAD-embedding negligibly
+  depends on the parts of the DFA after the information firewall.
+  Thus, one can lazily approximate the current state's embedding (which
+  then determines which action to take) by replacing the messages
+  from any pre-computed large DFA in the same family. [Since the messages
+  must converge to a constant](Adam-DayBCF24), the state embeddings
+  prior to the firewall must be approximately correct!
+}
+
+\p{
+  Importantly, as the agent progresses through the DFA and passes an
+  information firewall, they need only compute the state embeddings
+  until the next firewall. That is, they can defer planning in a manner very
+  similar to [construls](07F8).
+} 

@@ -1,0 +1,15 @@
+\date{2025-07-21T16:23:24Z}
+\title{Deferred Planning as Quotitenting}
+\author{marcell}
+
+\p{
+  The connection between deferred planning and information firewalls
+  illustrates a technical means by which RAD-DFAs and similar constructions
+  can bypass the limitations of encoding a countably infinite structure
+  into a functionally finite embedding space.
+}
+\p{
+  TODO: Add observation the RAD encoder/decoders  can't practically encode all
+  DFAs due to numerics, e.g., finite precision numbers and smoothness of
+  decoders.
+}

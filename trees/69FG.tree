@@ -16,15 +16,10 @@
   automata, this process acts like a form of deferred planning 
 }
 
-\transclude{69FK}  % DFA Definition
-\transclude{69FJ}  % Deferred planning as quotienting.
+\transclude{69FJ}  % The information firewall.
 
-\p{A collection of related conjectures is provided below.}
+\transclude{WDYU}  % Information firewalls => Deferred Planning.
+
+\transclude{R8C7}  % Deferred Planning as quotitenting.
+
 \transclude{8B52}  % Conjecture: Contrastive training has weaker quotienting.
-\transclude{EWUB}  % Counter example observation.
-\transclude{FT86}  % Conjecture: Distinguishing string length correlates wth dist.
-\transclude{YVK8}  % Conjecture: Embeddings should be easier to seperate as
-                   %             distinguishing string traversed.
-
-\p{TODO: Provide a conjecture of when this deferred planning will work. Informally, there musn't be "trap doors" where an early myopic decision results in a catastrophic failure later. NOTE: this may be related to the planning horizon of the optimal policy.}
-
