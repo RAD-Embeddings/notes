@@ -17,7 +17,7 @@
 \let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
 
 
-\title{Embedding distance correlates with the length of the minimal distinguishing string.}
+\title{Embedding distance correlates with the length of the minimal distinguishing string}
 
 \p{
   \strong{Note:} This conjecture is inspired by a question by
