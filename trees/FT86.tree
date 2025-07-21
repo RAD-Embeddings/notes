@@ -25,6 +25,8 @@
   presentation on [RAD Embeddings](69FH).
 }
 
+\p{\strong{Update}: This conjecture is generally false. See: [[EWUB]]. }
+
 \p{
   Let #{\RAD{\D1}} be the [RAD Embedding](69FH) for a [DFA](69FK) #{\D1}.
 
@@ -49,21 +51,5 @@
   \figcaption{
     Illustration of introducing a "embedding information firewall" into a
     large chain DFA.
-
-    TODO: The correlation direction is backward in this picture.
-    Increasing the length of the minimum distinguishing string should
-    reduce the embedding distance.
   }
-}
-
-
-\p{
-  \strong{Remark:} This also begs the question. What would happen if we were to
-  train an embedding to make this explicit?
-} 
-\p{
-  TODO: Insert trivial counterexample for this effect. Namely, you
-  can pump the minimum distinguishing string length by forcing "sparse
-  feedback" via long chains. This is actually the typical case in
-  RAD DFAs....
 }

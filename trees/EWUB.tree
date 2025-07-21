@@ -1,0 +1,25 @@
+\date{2025-07-21T00:45:37Z}
+\taxon{Observation}
+\title{The embedding distance along (minimal) distinguishing strings is generally non-monotonic.}
+\author{marcell}
+
+
+\p{
+  TODO: Expand counterexamples for monotonicity of embedding distance.
+  Specifically, having a shared suffix makes the embedding distance drop to zero along the string
+  once the shared state is indexed.
+  Having a [shared prefix + information firewall](WSBX) means the prefix states would have approximately
+  equivilent embeddings (due to determinism of message passing.) Combined this means one can
+  construct DFAs where the embedding distance is initially approximately zero, then increases
+  (different large middle DFAs) and then a common DFA suffix.
+}
+
+
+\figure{
+  \<html:img>[width]{400px}[src]{\route-asset{assets/imgs/emergent_planning/dfa-shared-prefix.svg}}
+  \figcaption{TODO}
+}
+\figure{
+  \<html:img>[width]{400px}[src]{\route-asset{assets/imgs/emergent_planning/dfa-shared-suffix.svg}}
+  \figcaption{TODO}
+}
