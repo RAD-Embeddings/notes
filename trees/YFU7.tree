@@ -1,0 +1,55 @@
+\date{2025-07-23T04:33:32Z}
+\taxon{Definition}
+\author{marcell}
+
+\title{RL-Free contrastive loss for RAD-embeddings}
+
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+\import{97MB}         % Distinguishing Strings
+\import{69FH}         % RAD Embeddings
+
+\let\Nat{\mathbb{N}}
+\let\Real{\mathbb{R}}
+\let\DFAs{\text{DFAs}}
+\let\D1{\DFA}
+\let\D2{\DFA^\prime}
+\let\D3{\DFA^{\prime\prime}}
+\let\eqdef{\triangleq}
+\let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
+\let\loss{\mathcal{L}}
+\let\params{\theta}
+\let\prefixes{\text{Prefixes}}
+\let\diff-prefixes{\delta\text{Prefixes}}
+
+\p{
+  Let ##{ f_\theta : \DFAs \to \Real^d } be a #{d\in\Nat} dimensional
+  [DFA](69FK) embedding with parameters #{\params \in \Reals^n, n \in \Nat},
+  and let
+  ##{ \delta : \DFAs \times \DFAs \to \alphabet^* \cup \bot }
+  be a function that maps pairs of DFAs to a [minimal distinguishing string](AVDB).
+}
+\p{
+  For a given word, #{w \in \alphabet^*}, let #{\prefixes(w)}, denote all of #{w}'s
+  prefixes (including #{w} and the empty string). 
+  Further, given a DFA #{\D1 \in \DFAs} and a word #{w\in\alphabet^*},
+  let #{\D1_w} denote the sub-DFA accessed by word #{w}.
+}
+\p{
+  Next, given two distiguishable DFAs, we denote by #{\diff-prefixes} set of
+  prefixes of minimal distinguishing given by #{\delta}.
+
+  ##{
+    \diff-prefixes(\D1, \D2) \eqdef \prefixes(\delta(\D1, \D2))
+  }
+}
+\p{
+  The RAD RL-free constrastive loss, #{\loss : \Reals^n \times \DFAs \times \DFAs \to \Reals},
+  is defined as:
+
+  ##{
+    \loss(\params, \D1, \D2) \eqdef \max_{w \in \diff-prefixes(\D1, \D2)} 
+       \norm{f_\theta(\D1)}{f_\theta(\D2)}.
+  }
+  That is the maximum embedding distance along the minimial distinguishing string.
+}
