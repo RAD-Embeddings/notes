@@ -1,0 +1,38 @@
+\date{2025-07-29T04:32:51Z}
+\author{marcell}
+\taxon{Algorithm Sketch}
+
+
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
+\import{97MB}         % Distinguishing Strings
+\import{69FH}         % RAD Embeddings
+\import{BV4G}         % RAD Distribution
+
+\let\DFAs{\text{DFAs}}
+\let\D1{\DFA}
+\let\D2{\DFA^\prime}
+\let\loss{\mathcal{L}}
+\let\distinguisher{w_*}
+\let\grad{\nabla}
+
+
+\title{RL-Free Training Procedure Sketch}
+
+\p{
+Next, let #{\radDist} denote a fixed [Reach Avoid Derived (RAD) training
+distribution](BV4G) over [DFAs](69FK). The training procedure for our
+proposed encoder is as follows.
+}
+
+
+\ol{
+  \li{Sample two \em{distinct} DFAs from #{\radDist}, call #{\D1} and #{\D2}.}
+  \li{Compute a [minimum distinguishing string](AVDB), #{\distinguisher}, betweeen
+     #{\D1} and #{\D2}, e.g., using a shortest path algorithm.}
+  \li{Compute the embeddings for #{\D1} and #{\D2}, i.e., #{f_\theta(\D1)} and
+     #{f_\theta(\D2)}, using the current parameters #{\theta}.}
+  \li{Compute the pairs of states visited by #{\distinguisher} and their corresonding embeddings.}
+  \li{To compute #{\loss(\theta, \D1, \D2)}, calculate their relative pair-wise distance and return the maximum.}
+  \li{Finally, compute the gradient with respect to #{\theta}, #{\grad_\theta \loss(\theta, \D1, \D2)} to update #{\theta}, e.g., using Adam.}
+}

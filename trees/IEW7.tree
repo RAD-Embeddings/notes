@@ -1,0 +1,13 @@
+\date{2025-07-29T04:04:12Z}
+\taxon{Proposal}
+\title{RL-Free training for RAD-embeddings}
+\author{marcell}
+
+\p{
+We propose an RL-free approach to training a DFA-encoder.
+We start with the training objective.
+}
+
+\transclude{YFU7}  % Training Loss.
+
+\transclude{ROF5}  % Sketch of algorithm.
