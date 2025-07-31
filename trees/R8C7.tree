@@ -3,13 +3,28 @@
 \author{marcell}
 
 \p{
+  Due to effects such as smoothness, lossy contractions, and finite precision encodings,
+  the number of encodings we can imagine mapping our DFAs to is finite.
+  As such, we must expect that some DFAs end up with the same or similar
+  encodings. Indeed, well behaved (smooth) neural networks require that 
+  nearby encodings map to similar outputs for small sufficently small neighborhood.
+}
+\p{
+  This is however problematic as DFAs don't offer an a-priori closeness
+  measure. For example, two DFAs that are structually similar might have very
+  different languages!
+}
+
+\p{
   The connection between deferred planning and information firewalls
   illustrates a technical means by which RAD-DFAs and similar constructions
   can bypass the limitations of encoding a countably infinite structure
   into a functionally finite embedding space.
 }
+
 \p{
-  TODO: Add observation the RAD encoder/decoders  can't practically encode all
-  DFAs due to numerics, e.g., finite precision numbers and smoothness of
-  decoders.
+  Specifically, under deferred planning, it is OK if two DFAs have hard
+  to distinguish encodings if the local policy is also hard to distinguish.
+  We only need to know the difference as the DFA progresses, which is a symbolic
+  process which reveals more of the relevant information.
 }
