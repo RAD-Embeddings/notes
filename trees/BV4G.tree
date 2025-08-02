@@ -1,7 +1,64 @@
 \date{2025-07-29T04:14:48Z}
-\title{Reach Avoid Derived Training Distribution}
+\title{Reach Avoid Derived DFAs}
 \author{marcell}
+\author/literal{Beyazit Yalcinkaya}
+\author/literal{Niklas Lauffer}
+\taxon{Definition}
+
+\import{thesis-I5ID}  % Formal Languages
+\import{69FK}         % DFAs
 
 \def\radDist{\mathcal{D}_{\text{RAD}}}
+\let\state{q}
+\let\state2{q^\prime}
+\let\dfa{\DFA}
 
-\p{ TODO }
+\p{
+  \strong{Note:}
+  This definition is adapted from our [Neurips 2024 paper](69FH) on
+  RAD embeddings.
+}
+
+\p{
+Observe that realizing any individual state transition #{\state
+\rightarrow \state2} through a [DFA](69FK) corresponds to a \em{reach-avoid} task:
+\ol{
+\li{eventually transition to state #{\state2}.}
+\li{avoid symbols that transition to a state different than #{\state} and #{\state2}.}
+}
+A path through a DFA, #{\state_1,\ldots, \state_n}, corresponds to a \em{sequence of
+reach-avoid (SRA)} tasks.
+}
+\transclude{X586}
+
+\p{ As [Fig X586](X586) illustrates, SRA tasks can be represented as DFA.
+We define reach-avoid derived DFAs as a generalization of SRA. }
+
+\p{
+Let a \em{mutation} of a DFA #{\dfa} to be the process of randomly changing a
+transition of #{\dfa}, removing the outgoing edges of the accepting state, and
+then minimizing. To change a transition, we uniformly sample a
+state-symbol-state triplet #{(q, \sigma, q')} and define #{\delta(q, \sigma)
+\eqdef q'}. A DFA #{\dfa} is said to be #{m-}\em{reach-avoid derived}
+(#{m}-RAD) if it can be constructed by mutating an SRA DFA #{m}-times. We
+define the #{(m,p)-}\em{RAD distribution} over DFAs, denoted, #{\radDist^{(m,p)}},
+as follows:
+
+\ol{
+  \li{sample a SRA DFA, #{\dfa},  with #{k + 2} states where #{k \sim \text{Geometric}(p)};
+each transition stutters with probability 0.9 and is otherwise made a reach or
+avoid transition with equal probability;}
+  \li{ sequentially apply #{m} mutations where mutations leading to trivial one-state DFAs are rejected.}
+}
+To avoid notational clutter, we shall often suppress #{m,p} and say RAD DFAs and #{\radDist}
+when #{m} and #{p} are clear from context or otherwise unimportant.
+}
+
+\p{
+[Fig X586](X586) demonstrates how mutations and minimization can turn an SRA
+DFA into a RAD DFA. To get the RAD DFA, we apply two mutations to the SRA DFA,
+adding two new transitions: (i) from #{q_0} to #{q_3} on green and (ii) from
+#{q_4} to #{q_1} on blue, and then the minimization collapses #{q_0} and #{q_4}
+to a single state.
+}
+
