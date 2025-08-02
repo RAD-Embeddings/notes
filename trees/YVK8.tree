@@ -16,6 +16,8 @@
 \let\eqdef{\triangleq}
 \let\norm[arg1][arg2]{\big\|\arg1 - \arg2\big\|}
 
+\p{\strong{update}: This is fleshed out in [[IEW7]].}
+
 \p{
   As is clear by the counterexamples to [conjecture FT86](FT86),
   the embedding distance between two DFAs along a distinguishing
@@ -35,10 +37,4 @@
   e.g., KL-divergance. Notably, this effect should get stronger as
   the policy becomes less and less mypoic, e.g., deciding the next
   `k` tokens at a time.
-}
-
-\p{
-  TODO: Formalize and propose this as a RL-free contrastive objective
-  -- try to maximimize the maximum embedding distance seen along
-  a minimal distinguishing string (along with some DFA specific properties such as closure).
 }

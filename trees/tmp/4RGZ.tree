@@ -1,0 +1,19 @@
+\date{2025-08-03T06:36:38Z}
+\title{Introduction}
+\p{This is a list of interesting things:
+}
+\ol{\li{Foo
+}
+
+\li{Bar
+}
+
+\li{Zah
+}
+}
+\ul{\li{Another
+}
+
+\li{List
+}
+}
