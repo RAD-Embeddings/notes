@@ -3,8 +3,6 @@
 \title{Quotienting in the dummy environment vs contrastive training}
 \taxon{Conjecture}
 
-\p{TODO: Expand on these details}
-
 \p{
   I conjecture that training in the dummy environment exhibits a stronger
   (lossier) quotienting since the optimal policy only needs to know the set
