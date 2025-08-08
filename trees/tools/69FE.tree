@@ -1,6 +1,0 @@
-\date{2025-06-17T14:17:43Z}
-\title{pudb Python Debugger}
-
-\p{From the [website](https://github.com/inducer/pudb): 
-
-\blockquote{Its goal is to provide all the niceties of modern GUI-based debuggers in a more lightweight and keyboard-friendly package. PuDB allows you to debug code right where you write and test it--in a terminal. }}
