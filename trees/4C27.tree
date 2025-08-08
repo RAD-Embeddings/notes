@@ -1,0 +1,9 @@
+\date{2025-08-14T04:37:10Z}
+\title{Conditioning on other agent's DFA objectives}
+
+\p{
+  Recall the [task conditioned multi-agent RL](ZGN0) setting.
+}
+\transclude{ZGN0}
+\p{TODO: Discuss conjunctions of DFA implictly induced by this
+   decomposition and the implicit decomposed alphabet.}

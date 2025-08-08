@@ -1,0 +1,13 @@
+\date{2025-08-14T04:53:22Z}
+\taxon{Definition}
+\title{Markov Decision Process}
+
+\def\MDP{M}
+\def\policy{\pi}
+\def\agent{\alpha}
+\def\state{s}
+\def\States{S}
+\def\action{a}
+\def\Actions{A}
+
+\p{TODO}
