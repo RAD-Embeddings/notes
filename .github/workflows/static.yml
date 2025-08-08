@@ -32,6 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: DeterminateSystems/determinate-nix-action@main # or v3.8.5 to pin to a release
+      - uses: DeterminateSystems/magic-nix-cache-action@main
       - run: nix run sourcehut:~jonsterling/ocaml-forester -- build
       - name: Setup Pages
         uses: actions/configure-pages@v5
