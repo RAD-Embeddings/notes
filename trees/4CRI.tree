@@ -1,0 +1,22 @@
+\date{2025-09-15T05:15:03Z}
+\taxon{Observation}
+\title{RAD-embeddings are also co-RAD}
+\author{marcell}
+
+\p{
+ In Proposal [[IEW7]], the key idea is create distinguishing strings
+ to contrast DFAs. Here, I note that this seems to work even for
+ "co-RAD" DFAs constructed by negating a RAD DFA, and thus have
+ all-accepting states except a single rejecting sink state.
+}
+\p{
+  An interesting quirk is that any distinguishing string
+  between two RAD DFAs must also distinguish their equivalent
+  co-RAD DFAs. Thus, if the tasks were restricted to the co-RAD
+  set, the RAD embeddings could be used!
+}
+\p{
+  \em{Thus, a new encoding must be learned to handle both RAD
+  and co-RAD DFAs.
+  }
+}
