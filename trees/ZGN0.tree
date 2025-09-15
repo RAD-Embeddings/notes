@@ -1,6 +1,7 @@
 \date{2025-08-14T04:38:46Z}
 \taxon{Definition}
 \title{Task-Conditioned Multi-Agent Reinforcement Learning (TC-MARL)}
+\author{marcell}
 
 \import{VBIH}  % MDP.
 
@@ -12,22 +13,30 @@
 
 \p{
   Let #{\agent_1, \ldots, \agent_n} be a collection of #{n}
-  agents operating in a shared [MDP](VBIH).
+  agents operating in a shared [MDP](VBIH), #{\MDP}, where
+  the actions set #{\Actions} is formed as a product: 
+  #{\Actions_1 \times \Actions_2 \ldots \times  \Actions_n},
+  over the individual agent actions.
   % TODO link to task definition.
-  Let #{\role_i \in \Roles} denote a binary task assigned to agent #{i}.
+  Let #{\role_i \in \Roles} denote a set of #{n} trace properties over the paths
+  of #{\MDP}.
 }
 \p{
   The goal of TC-MARL is to synthesize a policy,
   ##{
      \policy : \States \times \Roles \times \Roles^{n-1} \to \Distr{\Actions}
   }
-  that maximizes the probability that all agent tasks are satisified, 
+  that maximizes the probability that all agent tasks are satisfied, 
   i.e.,
   ##{\max_\pi \Pr_\path\left ( \bigwedge_i \role_i(\path) \mid \pi\right)}
   where #{\path \sim \policy} is a joint state path sampled 
-  from the distrubtion induced by each
+  from the distribution induced by each
   agent #{i} using the policy:
   ##{
      \policy_i(\bullet \mid s) \triangleq \policy(\bullet \mid s, \role, \role_{-1}) \in \Distr{\Actions}.
   }
+}
+\p{
+  Note that this problem can also trivially be extended to the
+  [distributed](3ZTU) setting.
 }

@@ -1,0 +1,10 @@
+\date{2025-09-15T04:31:31Z}
+\taxon{Definition}
+\title{Distributed Multi-Agent Policies}
+
+\p{
+  A multi-agent policy % TODO
+  is said to be distributed if, during the episode,
+  each agent computes their actions using only ego-centric
+  information and computation.
+}

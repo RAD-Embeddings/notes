@@ -1,0 +1,45 @@
+\date{2025-09-15T04:25:52Z}
+\taxon{Observation}
+\title{Role assignment is emergent in [[ZGN0]]}
+\author{marcell}
+
+\import{ZGN0}
+
+\p{
+  In [[ZGN0]], the objective is to maximize the probability
+  that all tasks are satisfied. Notably, in this definition
+  \em{ever agent sees every task! The only differences
+  in the policy inputs are:
+
+  \ol{
+    \li{the permutation of the decomposed tasks}
+    \li{the ego-centric observations in the [distributed](3ZTU) setting.}
+  }
+}
+}
+\p{
+  Notably absent is a signal assigning agents to a particular
+  task #{\role_i}.
+}
+\p{
+  For example, it's perfectly fine for a single agent to perform all
+  tasks.
+  Similarly, for any perceived task assignment, it's possible for
+  the agents to switch tasks.
+  Finally, it's valid for all agents "race" to perform all tasks.
+}
+\p{
+  As such, any cooperation must be generally emergent and facilitated
+  through symmetry breaks. Three symmetry breaks immediately come mind.
+  The first two come from the differences in policy inputs, e.g., 
+  the permutation of the decomposed tasks and the ego-centric
+  observations.
+}
+\p{
+  The third is the possibility are asymmetries in the way the agents
+  themselves interact with the environment and task satisfaction.
+  For example, it's entirely possible that the tasks are defined
+  over [DFAs](69FK) with different alphabets which themselves
+  reference the agent, e.g., token #{i} = "the #{k}th visits a
+  red tile."
+}

@@ -1,0 +1,42 @@
+\date{2025-09-15T04:15:04Z}
+\taxon{Conjecture}
+\author{marcell}
+\title{For TC-MARL, task decomposition is less important than symmetry breaking}
+
+\import{ZGN0}
+
+\p{
+  In [TC-MARL](ZGN0), the agents and the tasks are both decomposed,
+  however the objective is to satisfy the monolithic task.
+  This results in [agent role assignments being emergent](NIHG).
+  A natural question is if the task even needs to be decomposed at
+  all.
+}
+
+\p{
+  Here, the conjecture is that symmetry breaking, which then
+  leads to role specialization, is more important than
+  decomposing the task (for representationally small tasks).
+}
+
+\p{
+  More precisely, let #{\task = \bigwedge_i \role_i} be a target task
+  where each #{\role_i} is encoded as a small (< 4 state) DFA over a
+  common alphabet.
+}
+\p{
+  Let algorithm monolotihic be the approach of training a task
+  conditioned policy using a [RAD-embedding](69FH) of the conjunction 
+  of DFAs, e.g., as a single embedding, along with a symmetry breaking
+  signal, e.g., the agent id or ego centric view.
+}
+\p{
+  Let algorithm decomposed be the approach of training a task
+  using the construction established in [[ZGN0]].
+}
+\p{
+  The performance on the [DZM6] environment of these two algorithms
+  is approximately the same, e.g., similar learning curves are final
+  maximum returns.
+
+}
